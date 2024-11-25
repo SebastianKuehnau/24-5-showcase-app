@@ -7,8 +7,9 @@ import com.vaadin.flow.router.Menu;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.theme.lumo.LumoUtility;
+import org.vaadin.lineawesome.LineAwesomeIconUrl;
 
-@Menu(order = 7, title = "Overlay in Select")
+@Menu(order = 7, title = "Overlay in Select", icon = LineAwesomeIconUrl.WINDOW_RESTORE_SOLID)
 @PageTitle("Overlay Configuration in Select")
 @Route(value = "overlay")
 public class OverlayView extends HorizontalLayout {
