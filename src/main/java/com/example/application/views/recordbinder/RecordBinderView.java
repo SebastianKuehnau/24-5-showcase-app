@@ -1,6 +1,7 @@
 package com.example.application.views.recordbinder;
 
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.notification.NotificationVariant;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -11,8 +12,10 @@ import com.vaadin.flow.router.Menu;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouteAlias;
+import org.vaadin.lineawesome.LineAwesomeIconUrl;
 
-@Menu(order = 8, title = "Databinding with Records")
+@Menu(order = 8, title = "Databinding with Records", icon =
+        LineAwesomeIconUrl.COMPACT_DISC_SOLID)
 @PageTitle("Databinding with Records")
 @Route("record-binder")
 @RouteAlias("")
