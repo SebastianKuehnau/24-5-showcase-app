@@ -10,7 +10,7 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.flow.theme.lumo.LumoUtility.Margin;
 
 @PageTitle("I18n-Error-Message")
-@Route("")
+@Route("i18nerror")
 @Menu(order = 0, icon = "line-awesome/svg/times-circle.svg")
 public class I18nErrorMessageView extends VerticalLayout {
 
