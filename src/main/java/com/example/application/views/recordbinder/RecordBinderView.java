@@ -41,6 +41,7 @@ public class RecordBinderView extends VerticalLayout {
             try {
                 var savedUser = binder.writeRecord();
                 Notification notification = new Notification();
+                notification.addClassName("record-view");
                 notification.setText("\uD83E\uDD73 \uD83C\uDF89 \uD83C\uDF8A Hello " + savedUser.name() + "! \uD83E\uDD73 \uD83C\uDF89 \uD83C\uDF8A");
                 notification.setDuration(3000);
                 notification.setPosition(Notification.Position.BOTTOM_STRETCH);
