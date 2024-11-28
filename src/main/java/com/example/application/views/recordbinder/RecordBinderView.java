@@ -1,9 +1,7 @@
 package com.example.application.views.recordbinder;
 
 import com.vaadin.flow.component.button.Button;
-import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.notification.Notification;
-import com.vaadin.flow.component.notification.NotificationVariant;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.data.binder.Binder;
@@ -22,13 +20,13 @@ import org.vaadin.lineawesome.LineAwesomeIconUrl;
 public class RecordBinderView extends VerticalLayout {
 
     private final TextField nameField = new TextField("Name:");
-    private final Button saveButton = new Button("save");
 
     public record User(String name) {
     }
 
     public RecordBinderView() {
 
+        var saveButton = new Button("save");
         add(nameField, saveButton);
         nameField.focus();
 

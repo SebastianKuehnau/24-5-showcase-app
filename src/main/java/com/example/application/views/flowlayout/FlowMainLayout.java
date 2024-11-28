@@ -16,7 +16,7 @@ import com.vaadin.flow.router.RouterLayout;
 @ParentLayout(MainLayout.class)
 public class FlowMainLayout extends VerticalLayout implements RouterLayout {
 
-    private Div content = new Div();
+    private final Div content = new Div();
 
     public FlowMainLayout() {
         add(new H3("Flow Main Layout"));
